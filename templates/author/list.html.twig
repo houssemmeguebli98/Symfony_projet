@@ -1,0 +1,21 @@
+<table border ="1">
+{% for author in authors %}
+<tr>
+<td>
+{{author.id}}
+</td>
+<td>
+{{author.username}}
+</td>
+<td>
+<img width="60px" src={{asset(author.picture)}}
+</td>
+<td>
+{{author.email}}
+</td>
+<td>
+{{author.nb_books}}
+</td>
+</tr>
+{% endfor %}
+</table>
